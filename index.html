@@ -4,8 +4,13 @@
 <head>
     <title>Title</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.2.1 -->
@@ -16,147 +21,92 @@
 
 <body>
     <header>
-        <nav class="main">
+        <div class="side">
             <div class="logo">
-                <img src="images/1.png" alt="logo">
+                <img src="images/1.png" alt="">
+                gesdoc
             </div>
-            <div class="main_nav">
-                <a href="#">recherche</a>
-                <a href="#">panier</a>
-                <a href="#">meilleur</a>
-                <a href="#" style="text-align: center" class="buttonStyle">Connexion</a>
-                <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+            <div class="user">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>User name and account
             </div>
-        </nav>
-        <header class="secondnav">
-            <div class="overlay"></div>
-            <div class="descriptionText">
-                <p>Chez Aunty</p>
-                <h1>les meilleurs plats du quamer</h1>
-                <button class="buttonStyle">connexion</button>
+            <div class="options">
+                <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-users" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                <a href="#"><i class="fas fa-wallet fa-xs fa-fw"></i></a>
+                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
             </div>
 
-        </header>
+            <p id="espace">espace colaboratif</p>
+
+            <li class="colaboration">
+                <a href="#"><img src="images/6.png" alt="docs"> Tout les espaces</a>
+                <a href="#"><img src="images/6.png" alt="docs"> Commercial</a>
+                <a href="#"><img src="images/6.png" alt="docs"> Demonstration</a>
+                <a href="#"><img src="images/6.png" alt="docs"> Projet</a>
+                <a href="#"><img src="images/6.png" alt="docs"> Culture</a>
+                <a href="#"><img src="images/6.png" alt="docs"> Projet</a>
+            </li>
+
+            <p id="compte">votre compte</p>
+
+            <li class="comptes">
+                <a href="#">Mon profile</a>
+                <a href="#">Mes params</a>
+                <a href="#">Administration</a>
+            </li>
+
+
+
+        </div>
+        <div class="body_containt">
+            <nav class="nav_1">
+                <div class="logo2">
+                    <img src="images/2.png" alt="logo2"> demonstration
+                </div>
+                <li>
+                    <a href="#" onclick="openForm()">+Ajouter des fichiers</a>
+                    <a href="#">+Cree un repertoire</a>
+                    <a href="#">i</a>
+                    <a href="#">?</a>
+                </li>
+            </nav>
+            <nav class="nav_2">
+                <a href="#">Tableau de bord</a>
+                <a href="#">Fichiers</a>
+                <a href="#">Messages</a>
+                <a href="#">Projet</a>
+                <a href="#">TAbleau</a>
+                <a href="#">Agenda</a>
+                <a href="#">Forum</a>
+                <a href="#">Pages</a>
+                <a href="#">Sondages</a>
+                <a href="#">Equipe</a>
+                <a href="#">Parametre</a>
+            </nav>
+            <div class="container">
+                <div class="popupform">
+                    <div class="Popup">
+                        <div class="openandclose" >
+                            <p>Ajouter des fichiers</p>
+                            <i class="fa fa-window-close" onclick="closeForm()" aria-hidden="true"></i>
+                        </div>
+                        <p>cliquer sur les boutons Ajouter pour ajouter Changr pour changer et Anuler pour anuler</p>
+                        <li><a href="#">+Ajouter des fichiers</a>
+                            <a href="#">*Changer</a>
+                            <a href="#"> <i class="fa fa-ban" aria-hidden="true"></i>Annuler</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main class="content">
-        <div class="best_sallers">
-            <div class="item_sold">
-                <img src="images/8.jpg" alt="content">
-                <h1>top avocat</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Doloribus fugit quam maxime placeat? Aperiam, ullam!
-                </p>
-            </div>
-            <div class="item_sold">
-                <img src="images/9.png" alt="content">
-                <h1>top avocat</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Doloribus fugit quam maxime placeat? Aperiam, ullam!
-                </p>
-            </div>
-            <div class="item_sold">
-                <img src="images/10.png" alt="content">
-                <h1>top avocat</h1>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Doloribus fugit quam maxime placeat? Aperiam, ullam!
-                </p>
-            </div>
-        </div>
+    <main>
 
-        <div class="spoiler_presentation">
-            <img src="images/5.png" alt="plate">
-            <div class="info_text">
-                <h2>le plat d'okok ultime</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum beatae, nobis quis omnis nesciunt esse consequatur
-                    ullam explicabo!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum beatae, nobis quis omnis nesciunt esse consequatur
-                    ullam explicabo!
-                </p>
-                <button class="buttonStyle">Comander</button>
-            </div>
-        </div>
-
-
-        <div class="foodSold">
-            <div class="foodSoldcontent">
-                <div class="foodSoldDiv">
-                    <img src="images/5.png" alt="plate">
-                    <div class="ifo_text">
-                        <h2>le plat ultime</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eum beatae, nobis quis omnis nesciunt esse consequatur
-                            ullam explicabo!
-                        </p>
-                        <button class="buttonStyle">Comander</button>
-                    </div>
-                    <div class="foodSoldDiv">
-                        <img src="images/5.png" alt="plate">
-                        <div class="ifo_text">
-                            <h2>le plat ultime</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Eum beatae, nobis quis omnis nesciunt esse consequatur
-                                ullam explicabo!
-                            </p>
-                            <button class="buttonStyle">Comander</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="foodSoldcontent">
-                <div class="foodSoldDiv">
-                    <img src="images/5.png" alt="plate">
-                    <div class="ifo_text">
-                        <h2>le plat ultime</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eum beatae, nobis quis omnis nesciunt esse consequatur
-                            ullam explicabo!
-                        </p>
-                        <button class="buttonStyle">Comander</button>
-                    </div>
-                    <div class="foodSoldDiv">
-                        <img src="images/5.png" alt="plate">
-                        <div class="ifo_text">
-                            <h2>le plat ultime</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Eum beatae, nobis quis omnis nesciunt esse consequatur
-                                ullam explicabo!
-                            </p>
-                            <button class="buttonStyle">Comander</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
-    <!-- <footer>
-        <section class="firstFooterSection">
-            <div>
-                <h1>reserve a table chez aunty</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eum beatae, nobis quis omnis nesciunt esse consequatur
-                    ullam explicabo!
-                </p>
-            </div>
-            <button class=" footerBooton">Comander</button>
-        </section>
-        <section class="secondFooterSection">
-            <div></div>
-            <div></div>
-            <div></div>
-        </section>
-    </footer> -->
-
+    <footer>
+        <!-- place footer here -->
+    </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
