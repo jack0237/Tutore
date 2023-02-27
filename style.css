@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;   
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color:#FAFAFA;
+}
+.main{
+    z-index: 1000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    background-color: #2c2f36f0;
+    backdrop-filter:  blur(3px);
+}
+.main img{
+    height: 3rem;
+}
+.main_nav {
+    display: flex;
+    align-items: center;
+    
+}
+.main_nav a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: #FAFAFA;
+}
+.overlay{
+    height: 70vh;
+    background-color: #2c2f3660;
+}
+
+.secondnav{
+    background-image: url(images/8.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.descriptionText{
+    z-index: 1000;
+    position: absolute;
+    top: 6cm;
+    left: 5rem;
+}
+.descriptionText h1,p{
+    font-family: 'Anton', sans-serif;
+    padding: 5px;
+    color: #FAFAFA;
+}
+
+.buttonStyle{
+    margin-left: 10px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+    color: #FAFAFA;
+    background-color: #FF0000;
+}
+
+
+
+.best_sallers{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.best_sallers p{
+    color: black;
+}
+.item_sold img{
+    height: 10rem;
+    width: 15rem;
+    border-radius: 20px 20px 0 0;
+}
+.item_sold{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 10px;
+    width: 15rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 0px #657695;
+}
+.item_sold:hover{
+    width: 15.3rem;
+}
+.item_sold h1,p{
+    font-family: 'Anton', sans-serif;
+}
+.item_sold h1{
+    padding-top: 10px;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+.item_sold p{
+    text-align: center;
+    font-size: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spoiler_presentation{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px;
+    background-color: #2c2f36;
+}
+.spoiler_presentation h2,p{
+    padding: 10px;
+    color: #FAFAFA;
+    
+}
+.spoiler_presentation img{
+    height: 25rem;
+}
+
+.info_text{
+    width: 20rem;
+    margin-left: 15rem;
+}
+.info_text h2{
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+}
+.info_text p{
+    font-family: 'Anton', sans-serif;
+    width: rem;
+    font-size: small;
+    font-weight: 10;
+}
+
+.foodSoldcontent{
+    display: flex;
+}
+
+
+.foodSoldDiv{
+    display: flx;
+    width: 10rem;
+    height: 5rem;
+}
+.foodSoldDiv img{
+    height: 10rem;
+}
+
+
