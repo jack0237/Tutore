@@ -1,8 +1,8 @@
 function openForm() {
-    document.getElementById("popupForm").style.display = "block";
+    document.getElementsByClassName(".popupaddelements").style.display = "block";
   }
   function closeForm() {
-    document.getElementById("popupForm").style.display = "none";
+    document.getElementsByClassName(".popupaddelements").style.display = "none";
   }
   
 
