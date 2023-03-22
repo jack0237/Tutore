@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(240, 231, 231);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+.form{
+    text-align: center;
+    background-color: rgb(241, 248, 246);
+    height: 300px;
+    margin-top: 90px;
+    margin-left: 550px;
+    margin-right: 550px;
+    padding-bottom: 150px;
+   
+}
+.title_form-inscrip{
+    padding: 20px;
+    background-color: #006B7F;
+    color: rgb(255, 255, 255);
+}
+ul{
+    padding-top: 30px;
+    list-style: none;
+}

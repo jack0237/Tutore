@@ -179,3 +179,15 @@ header{
     height: 83vh;
     box-shadow: 0px 0px 13px 0px #657695;
 }
+div .modal-modal{
+    background-color: #6FA9B7;
+    height: 300px;
+    text-align: center;
+    padding: 150px ;
+    position: absolute;
+    top: -300px;
+    left: 45%;
+  
+    
+  
+}
