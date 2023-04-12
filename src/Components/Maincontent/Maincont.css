@@ -1,0 +1,16 @@
+.filescont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.filescont > img{
+    width: 1.5rem; 
+}
+
+.filescont > div{
+    font-size: small; 
+    text-overflow: nowrap;
+    
+}

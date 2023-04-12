@@ -1,0 +1,126 @@
+.side {
+    width: min(100vw, 40rem, 40rem);
+    background-color: #006B7F;
+    height: 100vh;
+    overflow: auto;
+    box-shadow: 4px -2px 11px #657695;
+}
+
+.side p {
+    text-transform: uppercase;
+    font-size: x-small;
+    color: azure;
+    margin-left: 20px;
+    padding-top: 60px;
+}
+
+.side .logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: azure;
+    height: 3.5rem;
+}
+
+.side .logo img {
+    width: 4rem;
+}
+
+.side .colaboration {
+    list-style: none;
+    text-decoration: none;
+}
+
+.side .colaboration a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #FEFEFE;
+    font-size: small;
+    display: flex;
+    text-decoration: none;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6FA9B7;
+    height: 4rem;
+    color: #FEFEFE;
+}
+
+.user i {
+    font-size: xx-large;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.options {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.options a {
+    text-decoration: none;
+    color: beige;
+}
+
+#espace {
+    margin-bottom: 10px;
+    border-top: 1px solid #FEFEFE;
+
+}
+
+.colaboration img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.colaboration a:hover {
+    background-color: #226f7f;
+}
+
+#compte {
+    text-transform: uppercase;
+    font-size: x-small;
+    color: #FEFEFE;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.comptes {
+    list-style: none;
+    text-decoration: none;
+}
+
+.comptes a {
+    list-style: none;
+    text-decoration: none;
+    color: #FEFEFE;
+    /* padding-bottom: 20px; */
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: small;
+    display: flex;
+    text-decoration: none;
+}
+
+
+.side::-webkit-scrollbar {
+    width: 5px;
+}
+.side::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.side::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.side::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
