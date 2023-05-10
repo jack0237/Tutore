@@ -1,23 +1,56 @@
 body{
-    background-color: rgb(240, 231, 231);
+    background-color: rgb(3, 3, 3);
     font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
 }
 .form{
     text-align: center;
-    background-color: rgb(241, 248, 246);
+    background-color: rgb(251, 255, 254);
     height: 300px;
-    margin-top: 90px;
-    margin-left: 550px;
-    margin-right: 550px;
-    padding-bottom: 60px;
+    margin-top: 15%;
+    margin-right: 30%;
+    margin-left: 30%;
+  
    
+}
+.form:not(.title_form-connex){
+    background-color: rgb(101, 209, 173);
 }
 .title_form-connex{
     padding: 20px;
     background-color: #006B7F;
     color: rgb(255, 255, 255);
 }
+div:container_form-connex{
+    background-color: rgb(255, 7, 7);
+}
+.but{
+    background-color:#006B7F ;
+}
+hr{
+    margin-right: 4px;
+    margin-top: 0,5px;
+}
+input{
+    display: block;
+    width: 88%;
+    font-weight: 600;
+    text-indent: 10px;
+    height: 28px;
+    border-radius: 10px;
+    background-color:rgb(101, 209, 173) ;
+    border: none;
+    margin-bottom: 1px;
+    -webkit-appearance: none;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
 ul{
-    padding-top: 30px;
     list-style: none;
+}
+button{
+    border: none;
+    background-color:#006B7F ;
+    padding: 3%;
 }
