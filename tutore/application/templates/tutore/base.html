@@ -1,0 +1,122 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>GESDOC</title>
+    <!-- Required meta tags -->
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    {% comment %} {% static '' %} {% endcomment %}
+    <link rel="stylesheet" href="{% static 'style/form.css' %}">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="side">
+            <div class="logo">
+                <img src="{% static 'images/1.png' %}" alt="">
+                gesdoc
+            </div>
+            <div class="user">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>User name 
+            </div>
+            <div class="options">
+                <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-users" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                <a href="#"><i class="fas fa-wallet fa-xs fa-fw"></i></a>
+                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+            </div>
+
+            <p id="espace">espace Niveau</p>
+
+            {% for category in category %}
+                <li class="colaboration">
+                    <a href="#"><img src={% static 'images/6.png' %} 
+                        alt="docs">{{category.name}}</a>
+                </li>
+            {% endfor %}
+            
+
+            <p id="compte">votre compte</p>
+            
+            {% block compte %}
+                    
+            {% endblock %}
+
+            
+
+        </div>
+
+
+        <div class="body_containt">
+            <nav class="nav_1">
+
+                <div class="logo2">
+                    <img src={Im2} alt="logo2"> demonstration
+                </div>
+
+                
+                <div>
+                    <form>
+                        <input type="search" id="maRecherche" name='item-name' placeholder="Rechercher sur le site…">
+                        <button type='submit'>
+                            <i id='search' class="fa-solid fa-magnifying-glass" style="color: #226f7f;"></i>
+                        </button>
+                    <form/>
+                    
+                </div>
+
+
+                <li>
+
+                    <a href="#" onclick="openForm()">+Ajouter des fichiers</a>
+                    <a href="#">+Cree un repertoire</a>
+                    <a href="#">i</a>
+                    <a href="#">?</a>
+                </li>
+            </nav>
+            <nav class="nav_2">
+                <a href="#">Tableau de bord</a>
+                <a href="#">Fichiers</a>
+                <a href="#">Messages</a>
+                <a href="#">Projet</a>
+                <a href="#">TAbleau</a>
+                <a href="#">Agenda</a>
+                <a href="#">Forum</a>
+                <a href="#">Pages</a>
+                <a href="#">Sondages</a>
+                <a href="#">Equipe</a>
+                <a href="#">Parametre</a>
+            </nav>
+            <div class="container">
+
+                {% block main %}
+                
+                {% endblock %}
+
+
+            </div>
+        </div>
+    </header>
+
+
+    </div>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{% extends "tutore/category.html" %}
+
+
+{% block content %}
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Name</td>
+            <td>Image</td>
+            <td>Category</td>
+            <td>Name</td>
+            <td>Image</td>
+            <td>Category</td>
+            <td>
+                <a href="{% url 'files_insert' %}" class="btn btn-outline-success">
+                    <i class="fas fa-plus"></i> Add New
+                </a>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for forms in forms_list %}
+            <tr>
+                <td>{{forms.title}}</td>
+                <td>{{foems.image}}</td>
+                <td>{{forms.sub_category}}</td>
+                <td>{{foems.Auteur}}</td>
+                <td>{{forms.date_de_modification}}</td>
+                <td>{{foems.dernier_contributeur}}</td>
+                <td>
+                    <a href="{% url 'files_update' forms.id %}" class="btn text-secondary px-0">
+                        <i class="far fa-edit fa-lg"></i>
+                    </a>
+                    <form action="{% url 'files_delete' files.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn">
+                            <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

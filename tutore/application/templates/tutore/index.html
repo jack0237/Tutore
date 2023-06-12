@@ -1,0 +1,19 @@
+{% extends 'tutore/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+{% for files in files_object %}
+
+
+    <div class='list_element'>
+        <img src="{% static 'images/6.png' %}" alt="{{ files.title}}">
+        <p> {{files.title}}</p>
+    </div>
+
+{% endfor %}
+
+
+{% endblock %}

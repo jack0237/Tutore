@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(240, 231, 231);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+}
+div.form{
+    text-align: center;
+    background-color: rgb(241, 248, 246);
+    padding-bottom: 25px;
+    margin-right: 450px;
+    margin-left: 450px;
+    border-radius: 15px;
+    margin-top: 20px;
+    
+   
+}
+.title_form-inscrip{
+    padding: 20px;
+    background-color: #006B7F;
+    color: rgb(255, 255, 255);
+    
+}
+ul{
+    padding-top: 30px;
+    list-style: none;
+}
+input.text{
+    display: block;
+    width: 88%;
+    font-weight: 600;
+    text-indent: 10px;
+    height: 28px;
+    border-radius: 10px;
+    background-color:rgb(205, 240, 228) ;
+    border: none;
+    margin-bottom: 1px;
+    -webkit-appearance: none;
+}
