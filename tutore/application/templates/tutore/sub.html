@@ -1,0 +1,23 @@
+{% extends 'tutore/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+{% for subcat in subcategory %}
+
+
+    <div class='list_element'>
+        <div>
+            <a href='{% url 'content' subcat.id %}' >
+            <img src="{% static 'images/6.png' %}" >
+            <p class='overflow'> {{subcat.name}}</p>
+            </a>
+        <div/>
+    </div>
+
+{% endfor %}
+
+
+{% endblock %}

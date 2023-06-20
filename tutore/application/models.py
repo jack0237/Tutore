@@ -27,7 +27,7 @@ class SubCategory(models.Model):
 
 class Files(models.Model):
     title = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='images/')
+    image = models.FileField(upload_to='images/')
     sub_category = models.ForeignKey(SubCategory, related_name='categorie', on_delete=models.CASCADE)
     Auteur = models.CharField(max_length=200)
     date_added = models.DateTimeField(auto_now=True)

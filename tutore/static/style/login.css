@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(3, 3, 3);
+  background-color: rgb(227, 255, 253);
   font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
 }
 .form{
@@ -40,7 +40,6 @@ input{
   background-color:rgb(101, 209, 173) ;
   border: none;
   margin-bottom: 1px;
-  -webkit-appearance: none;
 }
 input:focus{
   border: none;

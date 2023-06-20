@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border: none;
-
+    text-decoration: none;
 }
 
 body {
@@ -204,12 +204,36 @@ header {
     justify-content: center;
 }
 
-.list_element img{
-    margin: 5px;
-    height: 20px;
+.list_element >div> a>img{
+    margin: 10px;
+    height: 3rem;
     margin-right: 5px;
     text-align: center;
 }
+.list_element > div > a{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+}
+
+.list_element > div {
+    display: flex;
+    
+ }
+
+.overflow{
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list_element {
+    margin: 10px;
+    
+ }
 
 
 
@@ -219,6 +243,11 @@ header {
     border-radius: 20px;
     padding: 10px;
     outline: #226f7f;
+}
+
+.stylebg{
+    background: none;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 

@@ -7,11 +7,14 @@
 
 {% for files in files_object %}
 
-
-    <div class='list_element'>
-        <img src="{% static 'images/6.png' %}" alt="{{ files.title}}">
-        <p> {{files.title}}</p>
-    </div>
+<div class='list_element'>
+    <div>
+        <a>
+            <img src="{% static 'images/3.png' %}" >
+            <p class='overflow'> {{files.title}}</p>
+        </a>
+    <div/>
+</div>
 
 {% endfor %}
 

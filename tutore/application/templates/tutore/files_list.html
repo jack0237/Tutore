@@ -1,34 +1,28 @@
-{% extends "tutore/category.html" %}
+{% extends "tutore/filesI.html" %}
 
 
 {% block content %}
 <table class="table table-borderless">
     <thead class="border-bottom font-weight-bold">
         <tr>
-            <td>Name</td>
-            <td>Image</td>
-            <td>Category</td>
-            <td>Name</td>
-            <td>Image</td>
-            <td>Category</td>
+            <td>Full Name</td>
+            <td>description</td>
+            <td>Document</td>
             <td>
                 <a href="{% url 'files_insert' %}" class="btn btn-outline-success">
-                    <i class="fas fa-plus"></i> Add New
+                    <i class="fas fa-plus"></i> Add
                 </a>
             </td>
         </tr>
     </thead>
     <tbody>
-        {% for forms in forms_list %}
+        {% for files in files_list %}
             <tr>
-                <td>{{forms.title}}</td>
-                <td>{{foems.image}}</td>
-                <td>{{forms.sub_category}}</td>
-                <td>{{foems.Auteur}}</td>
-                <td>{{forms.date_de_modification}}</td>
-                <td>{{foems.dernier_contributeur}}</td>
+                <td>{{files.title}}</td>
+                <td>{{files.image}}</td>
+                <td>{{files.sub_categort}}</td>
                 <td>
-                    <a href="{% url 'files_update' forms.id %}" class="btn text-secondary px-0">
+                    <a href="{% url 'files_update' files.id %}" class="btn text-secondary px-0">
                         <i class="far fa-edit fa-lg"></i>
                     </a>
                     <form action="{% url 'files_delete' files.id %}" method="post" class="d-inline">

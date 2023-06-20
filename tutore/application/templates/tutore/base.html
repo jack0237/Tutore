@@ -28,22 +28,39 @@
                 <img src="{% static 'images/1.png' %}" alt="">
                 gesdoc
             </div>
+
+            {% if user.is_authenticated %}
+                <div class="user">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>{{ user.username }}
+                </div>
+            {% else %}
+
             <div class="user">
-                <i class="fa fa-user-circle" aria-hidden="true"></i>User name 
+                <a href='{% url 'login' %}'><i class="fa-solid fa-user-secret" style="color: #226f7f;"></i><a/>{{ user.username }}
             </div>
+
+            {% endif %}
+
             <div class="options">
-                <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                
+                <a href="{% url 'home' %}"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-users" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-                <a href="#"><i class="fas fa-wallet fa-xs fa-fw"></i></a>
-                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                <a href="{% url 'login' %}"><i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                {% endif %}
+                
             </div>
+
 
             <p id="espace">espace Niveau</p>
 
+
+
             {% for category in category %}
                 <li class="colaboration">
-                    <a href="#"><img src={% static 'images/6.png' %} 
+                    <a href="{% url 'subcat' category.id %}"><img src={% static 'images/6.png' %} 
                         alt="docs">{{category.name}}</a>
                 </li>
             {% endfor %}
@@ -64,28 +81,29 @@
             <nav class="nav_1">
 
                 <div class="logo2">
-                    <img src={Im2} alt="logo2"> demonstration
+                     demonstration
                 </div>
 
                 
                 <div>
                     <form>
                         <input type="search" id="maRecherche" name='item-name' placeholder="Rechercher sur le site…">
-                        <button type='submit'>
-                            <i id='search' class="fa-solid fa-magnifying-glass" style="color: #226f7f;"></i>
+                        <button type='submit' class='stylebg'>
+                            <i id='search' class="fa-solid fa-magnifying-glass stylebg" style="color: #226f7f;"></i>
                         </button>
                     <form/>
                     
                 </div>
 
-
+                {% if user.is_authenticated %}
                 <li>
-
-                    <a href="#" onclick="openForm()">+Ajouter des fichiers</a>
+                    <a href="{% url 'files_insert' %}" >
+                        +Ajouter des fichiers
+                    </a>
                     <a href="#">+Cree un repertoire</a>
-                    <a href="#">i</a>
-                    <a href="#">?</a>
+                    <a href="#">+Cree un sousrepertoir</a>
                 </li>
+                {% endif %}
             </nav>
             <nav class="nav_2">
                 <a href="#">Tableau de bord</a>

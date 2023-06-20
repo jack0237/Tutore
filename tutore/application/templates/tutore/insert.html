@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="addEmployeeModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="{% url 'ADD' %}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="modal-header">						
+                        <h4 class="modal-title">Edit Files</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">					
+                        <div class="form-group">
+                            <label for="">Titre</label>
+                            <input type="text" name="Titre" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Auteur</label>
+                            <input type="text" name="Auteur" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nom fichier</label>
+                            <input type="text" name="nom_du_fichier" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Dernier contributeur</label>
+                            <input type="text" name="dernier_contributeur" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Date de creation</label>
+                            <input type="date" name="date_de_creation" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Sujet</label>
+                            <input type="text" name="sujet" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <input type="text" name="description" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Document</label>
+                            <input type="file" name="document" class="form-control">
+                        </div>					
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Annuler">
+                        <button class="btn btn-primary" type="submit">Enregistrer le fichier</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

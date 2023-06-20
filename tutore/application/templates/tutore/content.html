@@ -1,0 +1,24 @@
+{% extends 'tutore/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+
+{% for file in filesd %}
+
+<div class='list_element'>
+    <div>
+        <a href='' download='{{ file.image.url }}'>
+        <img src="{% static 'images/3.png' %}" >
+        <p class='overflow'> Name:&nbsp; {{file.title}}</p>
+        <span>Modif date:&nbsp; {{ file.date_de_modification }} </span>
+        <span>Author: &nbsp; {{ file.Auteur }} </span>
+        </a>
+    <div/>
+</div>
+
+{% endfor %}
+
+
+{% endblock %}

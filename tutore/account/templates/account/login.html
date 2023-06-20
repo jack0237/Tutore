@@ -8,27 +8,32 @@
     <title>Inscription</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="{%static 'style/login.html'%}">
+    <link rel="stylesheet" href="{% static 'style/login.css' %}">
 
 </head>
 <body>
-    <div class="form">
+    <form method='POST'>
+        {% csrf_token %}
+       <div class="form">
         <div class="title_form-connex">
             CONNECTEZ VOUS
         </div>
         <div class="container_form-connex">
             <ul>
-                <li><input type="text" aria-label="Nom et Prenom" placeholder="Nom d'utilisateur"></li>
+                <li><input type="text" id="username" type="text" name="username" placeholder="Nom d'utilisateur"></li>
                 <br>
                 <hr>
-                <li><input type="password" aria-label="Verification" placeholder="Mot de passe"></li>
+                <li><input type="password" type="text" name="password" id="password" placeholder="Mot de passe"></li>
                 <br>
             </ul>
             <div class="but">
-                <button>S'inscrire</button>
+                <button type="submit">Connection</button>
+                <a href="{% url 'signup' %}">pas de compte ?</a>
             </div>
         </div>
-    </div>
+     </div> 
+    <form/>
+    
 </body>
 </html>
 
